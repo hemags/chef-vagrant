@@ -15,7 +15,7 @@ end
 #cookbook_file 'usr/share/nginx/html/index.html' do
 #	source "index.html"
 #	action :create
-#end#
+#end
 #
 #template '/usr/share/nginx/html/index.html' do
 #	source "index.html.erb"
