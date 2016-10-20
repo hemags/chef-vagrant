@@ -9,17 +9,17 @@
 execute 'apt-get update -y'
 
 package 'nginx' do
-	action:install
+  action:install
 end
 
-#cookbook_file 'usr/share/nginx/html/index.html' do
+# cookbook_file 'usr/share/nginx/html/index.html' do
 #	source "index.html"
 #	action :create
-#end
+# end
 #
 #
 #
-#template '/usr/share/nginx/html/index.html' do
+# template '/usr/share/nginx/html/index.html' do
 #	source "index.html.erb"
 #	action :create
-#end
+# end
