@@ -1,0 +1,31 @@
+{
+  "name": "apache2-windows",
+  "version": "0.2.0",
+  "description": "Installs and configures Apache on Microsoft Windows platforms.",
+  "long_description": "Chef Cookbook for Apache 2 on Windows\n=====================================\n\nInstalls and configures Apache 2 on Windows.\n\nRequirements\n------------\n#### packages\n\n- windows\n- vcruntime\n\nSupported Platforms\n-------------------\nMicrosoft Windows 2008 R2 and up.\n\nUsage\n-----\n#### apache2_windows::default\n\nJust include `apache2_windows` in your node's `run_list`:\n\n```json\n{\n  \"name\":\"my_node\",\n  \"run_list\": [\n    \"recipe[apache2_windows]\"\n  ]\n}\n```\n\nLicense and Authors\n-------------------\n\n* Author:: Yvo Van Doorn (yvo@getchef.com)\n* Author:: Chris McClimans (hh@hippiehacker.org)\n* Author:: Dan Robinson (dan@getchef.com)\n* Author:: Julian Dunn (jdunn@getchef.com)\n* Author:: James Francis (james@gnslngr.us)\n\n* Copyright (C) 2013-2014 Chef Software, Inc.\n\nLicensed under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at\n\nhttp://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.\n",
+  "maintainer": "Chef Software, Inc.",
+  "maintainer_email": "cookbooks@getchef.com",
+  "license": "Apache 2.0",
+  "platforms": {
+    "windows": ">= 0.0.0"
+  },
+  "dependencies": {
+    "windows": ">= 0.0.0"
+  },
+  "recommendations": {
+  },
+  "suggestions": {
+  },
+  "conflicting": {
+  },
+  "providing": {
+  },
+  "replacing": {
+  },
+  "attributes": {
+  },
+  "groupings": {
+  },
+  "recipes": {
+  }
+}
