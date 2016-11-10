@@ -6,7 +6,7 @@
 #
 # All rights reserved - Do Not Redistribute
 
-#execute 'apt-get update -y'
+# execute 'apt-get update -y'
 
 package 'nginx' do
   action:install
@@ -14,7 +14,7 @@ end
 
 service 'nginx' do
   action:start
- end
+end
 
 # cookbook_file 'usr/share/nginx/html/index.html' do
 #	source "index.html"
