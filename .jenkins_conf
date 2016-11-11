@@ -1,0 +1,13 @@
+{
+ "git_repo" : "",
+ "chef_clients" : [
+	{
+		"ServerName" : Tag a name,
+		"IP": IP address,
+		"user": username to use,
+		"password": password to use,
+		"sudo_user": yes or no,
+		"cookbooks": []
+	}
+]
+} 
