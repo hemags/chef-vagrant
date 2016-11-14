@@ -8,11 +8,11 @@
 
 # execute 'apt-get update -y'
 
-package 'nginx' do
+package 'tomcat' do
   action:install
 end
 
-service 'nginx' do
+service 'tomcat' do
   action:start
 end
 
