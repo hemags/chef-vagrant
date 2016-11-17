@@ -1,10 +1,8 @@
 require 'chefspec'
 
 describe 'webserver::default' do
-  let(:chef_run) { 
-    ChefSpec::SoloRunner.new(platform: 'ubuntu', version: '14.04', log_level: :fatal)
-	  .converge(described_recipe) 
-  }
+  let(:chef_run)
+  {ChefSpec::SoloRunner.new(platform:'ubuntu',version:'14.04').converge(described_recipe)}
 
   it 'installs a package with an ngnix' do
     expect(chef_run).to install_package('ngnix')
