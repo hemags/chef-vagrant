@@ -14,12 +14,4 @@ describe 'webserver::default' do
   it 'Do not disable ngnix server' do
     expect(chef_run).to_not disable_service('ngnix')
   end
-
-  it 'Stops ngnix server' do
-    expect(chef_run).to stop_service('nginx')
-  end
-
-  it 'disable nginx server' do
-    expect(chef_run).to disable_service('nginx')
-  end
 end
