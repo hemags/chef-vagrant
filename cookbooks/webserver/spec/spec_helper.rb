@@ -3,8 +3,7 @@ require 'chefspec'
 describe 'webserver::default' do
   let(:chef_run)
   {
-  ChefSpec::SoloRunner.new(platform:'ubuntu',version:'14.04')
-  .converge(described_recipe)
+  ChefSpec::SoloRunner.new(platform:'ubuntu',version:'14.04').converge(described_recipe)
   }
 
   it 'installs a package with an ngnix' do
