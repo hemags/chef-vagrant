@@ -8,11 +8,11 @@
 
 execute 'apt-get update -y'
 
-package 'ngnix' do
+package 'nginx' do
   action:install
 end
 
-service 'ngnix' do
+service 'nginx' do
   action:start
 end
 
