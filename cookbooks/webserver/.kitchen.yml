@@ -8,7 +8,6 @@ provisioner:
 platforms:
   - name: precise64
 
-
 suites:
   - name: default
     run_list:
