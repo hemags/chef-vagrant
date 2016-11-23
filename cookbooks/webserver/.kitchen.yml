@@ -1,12 +1,29 @@
 ---
 driver:
-  name: vagrant
+  name: ec2
+  security_group_ids: ["sg-e0b33c89"]
+  region: ap-south-1
+  require_chef_omnibus: true
+  instance_type: t2.micro
+
+transport:
+  connection_timeout: 10
+  connection_retries: 5
+  username: ec2-user
 
 provisioner:
-  name: chef_zero
+  name: chef_solo
 
 platforms:
-  - name: precise64
+#  - name: ubuntu-14.04
+#  - name: centos-7.2
+  - name: RHEL-7.2
+    driver:
+      image_id: ami-cdbdd7a2
+      aws_ssh_key_id: hemags_acc
+    transport:
+      username: ec2-user
+      ssh_key: /automation/hemags_acc.pem
 
 suites:
   - name: default

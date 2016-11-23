@@ -6,7 +6,7 @@
 #
 # All rights reserved - Do Not Redistribute
 
-execute 'apt-get update -y'
+execute 'yum update -y'
 
 package 'nginx' do
   action:install
