@@ -8,11 +8,11 @@
 
 execute 'yum update -y'
 
-package 'nginx' do
+package 'httpd' do
   action:install
 end
 
-service 'nginx' do
+service 'httpd' do
   action:start
 end
 
