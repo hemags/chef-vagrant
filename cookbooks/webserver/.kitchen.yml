@@ -23,7 +23,7 @@ platforms:
       aws_ssh_key_id: hemags_acc
     transport:
       username: ec2-user
-      ssh_key: /automation/hemags_acc.pem
+      ssh_key: ../hemags_acc.pem
 
 suites:
   - name: default
