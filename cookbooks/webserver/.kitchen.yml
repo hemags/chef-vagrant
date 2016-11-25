@@ -23,7 +23,7 @@ platforms:
       aws_ssh_key_id: hemags_acc
     transport:
       username: ec2-user
-      ssh_key: ../hemags_acc.pem
+      ssh_key: /automation/jenkins_chef_env_aws/repository/hemags_acc.pem
 
 suites:
   - name: default
